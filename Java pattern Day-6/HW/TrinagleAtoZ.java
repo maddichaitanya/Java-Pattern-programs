@@ -114,8 +114,98 @@ class TrinagleAtoZ{
 		}
 
 /*
+	abcde
+	bcde
+	cde
+	de
+	e	
 
 */
-		System.out.println();	
+		System.out.println();
+		for(int i=1;i<=n;i++){
+			for(int j=i;j<=n;j++){
+				System.out.print((char)(j+96));
+			}
+			System.out.println();
+		}
+/*
+	E	
+	ED
+	EDC
+	EDCB
+	EDCBA
+		
+*/	
+
+		System.out.println();
+		for(int i=n;i>=1;i--){
+			for(int j=n;j>=i;j--){
+				System.out.print((char)(j+64));
+			}
+			System.out.println();
+		}
+
+/*
+	EDCBA
+	EDCB
+	EDC
+	ED
+	E
+
+*/
+		System.out.println();
+		for(int i=1;i<=n;i++){
+			for(int j=n;j>=i;j--){
+				System.out.print((char)(j+64));
+			}
+			System.out.println();
+		}
+
+/*
+	e
+	ed
+	edc
+	edcb
+	edcba	
+
+*/
+		System.out.println();
+		for(int i=1;i<=n;i++){
+			for(int j=n;j>=i;j--){
+				System.out.print((char)(j+96));
+			}
+			System.out.println();
+		}
+
+/*
+	e
+	de
+	cde
+	bcde
+	abcde	
+
+*/
+		System.out.println();
+		for(int i=n;i>=1;i--){
+			for(int j=i;j<=n;j++){
+				System.out.print((char)(j+96));
+			}
+			System.out.println();
+		}
+
+/*
+	edcba
+	dcba
+	cba
+	ba
+	a
+*/
+		System.out.println();
+		for(int i=n;i>=1;i--){
+			for(int j=i;j>=1;j--){
+				System.out.print((char)(j+96));
+			}
+			System.out.println();
+		}
 	}
 }	
