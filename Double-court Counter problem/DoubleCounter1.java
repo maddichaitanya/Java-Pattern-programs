@@ -76,12 +76,12 @@ class DoubleCounter1{
 				System.out.print((char)(64+c11));
 				System.out.print((char)(64+c22));
 				System.out.print("\t");
-				c11-=j+1;
-				c22+=j;
+				c11-=j;
+				c22+=j-1;
 			}
 			System.out.println();
 			c1+=i-1;
-			c2-=i;		
+			c2;		
 		}
 
 /*
