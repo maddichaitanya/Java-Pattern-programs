@@ -81,7 +81,7 @@ class DoubleCounter1{
 			}
 			System.out.println();
 			c1+=i-1;
-			c2;		
+			c2-=i;		
 		}
 
 /*
