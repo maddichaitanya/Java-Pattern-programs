@@ -12,7 +12,7 @@ class DoubleCounter1{
 	int n=5;
 		int c1=1;	
 		int c2=(n*(n+1))/2;
-		for(int i=n;i>=n;i--){ 
+		for(int i=n;i>=1;i--){ 
 			int c11=c1;//1
 			int c12=c2;//15
 			for(int j=i;j<n;j++){ 
@@ -20,7 +20,7 @@ class DoubleCounter1{
 			}
 			for(int j=i;j>=1;j--){ 
 				System.out.print((char)(64+c11)+""+(char)(64+c12)+"\t");
-				c11+=j(n-i); 
+				c11+=j+(n-i); 
 				c12-=(n-j+2);
 			}
 			System.out.println();
@@ -55,16 +55,16 @@ class DoubleCounter1{
 		}
 
 /*
-						EO						5 15
-					IJ	DN					9 10	4 14
-				LF	HI	CM				12 6	8 9	3 13
-			NC	KE	GH	BL			14 3	11 5	7 8	2 12
-		OA	MB	JD	FG	AK		15 1	13 2 	10 4	6 7	1 11
+						EO						        5 15
+					IJ	DN					       9 10	4 14
+				LF	HI	CM				      12 6	8 9	3 13
+			NC	KE	GH	BL		     	14 3  11 5	7 8	2 12
+		OA	MB	JD	FG	AK		 15 1   13 2  10 4	6 7	1 11
 
 */
 
 		c1=n;
-		c2=(n*(n+1))/2;
+		c2=(n*(n+1))/2; 
 		
 		for(int i=n;i>=1;i--){
 			int c11=c1;
@@ -86,10 +86,10 @@ class DoubleCounter1{
 
 /*
 	EE DI CL BN AO		5  5	4  9	3  12	2  14	1  15
-	ID HH GK FM		9  4	8  8	7  11	6  13
-	LC KG JJ		12 3    11 7	10 10
-	NB MF 			14 2	13 6
-	OA			15 1
+	ID HH GK FM		    9  4	8  8	7  11	6  13
+	LC KG JJ		    12 3    11 7	10 10
+	NB MF 			    14 2	13 6
+	OA			        15 1
 
 */
 		
