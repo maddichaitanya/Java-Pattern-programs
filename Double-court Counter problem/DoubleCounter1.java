@@ -3,29 +3,29 @@ class DoubleCounter1{
 
 /*
 	AO FM JJ MF OA	      1 15   	6 13 	10 10 	13 6  	15 1
-	   BN GK KG NB	           	2 14	7  11	11 7	14 2
-	      CL HH LC				3  12   8  8    12 3
-		 DI ID					4  9    9  4
-		    EE						5  5
+	   BN GK KG NB	             	2 14	7  11	11 7	14 2
+	      CL HH LC				            3  12   8  8    12 3
+		     DI ID					                4  9    9  4
+		        EE						                    5  5
 */
 
 	int n=5;
 		int c1=1;	
 		int c2=(n*(n+1))/2;
-		for(int i=1;i<=n;i++){ // i=1
+		for(int i=n;i>=n;i--){ 
 			int c11=c1;//1
 			int c12=c2;//15
-			for(int j=1;j<i;j++){ 
+			for(int j=i;j<n;j++){ 
 				System.out.print("\t");
 			}
-			for(int j=n;j>=i;j--){ //j=5,4,3,2,1
+			for(int j=i;j>=1;j--){ 
 				System.out.print((char)(64+c11)+""+(char)(64+c12)+"\t");
-				c11+=j; // 6
-				c12-=i;
+				c11+=j(n-i); 
+				c12-=(n-j+2);
 			}
 			System.out.println();
 			c1++;
-			c2-=i;
+			c2-=n-i+1;
 		}
 
 /*
